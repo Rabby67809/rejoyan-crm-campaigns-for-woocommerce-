@@ -1,0 +1,97 @@
+Rejoyan CRM & Campaigns for WooCommerce — Changelog
+
+= 1.0.0 =
+* Finalized the first WordPress.org submission release.
+* Resolved pre-submission Plugin Check findings for translator comments, nonce verification, input sanitization, custom-table identifier escaping, caching annotations and uninstall variable prefixing.
+* Added server-side marketing-permission confirmation to standard queued campaigns.
+* Hardened CSV report cells against spreadsheet formula execution.
+* Reworked release documentation and human-readable assets for WordPress.org review.
+* Preserved all v0.8.0 automation, scheduling, retry, System Health, smart-segment, product-linked template and live-product Social Studio functionality.
+
+= 0.8.0 =
+* Added future scheduling for standard campaigns and saved-offer email sends using Action Scheduler when available with WP-Cron fallback.
+* Added offer start/end validity windows and blocked unavailable offers from sending and product CTA resolution.
+* Added product-buyer campaign targeting using real WooCommerce purchase history.
+* Added full HTML campaign preview in a separate admin-safe view.
+* Added retry-failed-recipient workflow without re-sending recipients already marked sent.
+* Added a dedicated System Health page with queue, cron, schema, WooCommerce and sender checks.
+* Added scheduled campaign status/time display in campaign history.
+
+= 0.7.0 =
+* Rebuilt Social Studio around live published WooCommerce products from the current website; no demo or fake products are inserted.
+* Added AJAX product search, category filtering, sale/stock filtering and Load More pagination.
+* Added live product count, category/SKU metadata, stock state and direct View Product actions.
+* Added premium self-contained 3D-style share controls for Facebook, X, LinkedIn and WhatsApp without external icon/CDN assets.
+* Added device-native Web Share support with a copy fallback when the browser does not support native sharing.
+* Kept product images lazy-loaded and product catalog queries batched for large-store performance.
+
+= 0.6.1 =
+* Added shell-first admin rendering so Rejoyan CRM & Campaigns screens paint before expensive store data is queried.
+* Added deferred AJAX panels for Dashboard, Email Center, Segments, Campaign History, Social Studio, Analytics and Invoices.
+* Added viewport-aware loading with IntersectionObserver so below-the-fold campaign history waits until needed.
+* Restricted WooCommerce enhanced-select assets to the Offers screen where product search is actually used.
+* Added native lazy-loading and async decoding for Social Studio product images.
+* Primed customer user-meta cache before rendering the Email Center to reduce per-customer metadata queries.
+* Added deferred script loading for the Rejoyan CRM & Campaigns admin bundle.
+* Stopped loading Rejoyan CRM & Campaigns admin/report classes on customer-facing storefront requests.
+* Added retry handling for deferred admin panels.
+
+= 0.6.0 =
+* Added six ready-made offer email templates: Flash Sale, New Arrival, VIP Exclusive, Weekend Deal, Product Spotlight and Back in Stock.
+* Added WooCommerce product linking to reusable offers using WooCommerce product search.
+* Added live product name, price and image support inside offer emails.
+* Added product placeholders: `{{product_name}}`, `{{product_price}}` and `{{product_url}}`.
+* Added a non-logging local offer redirect that opens the linked WooCommerce product.
+* Added optional WooCommerce coupon auto-apply behavior using the customer cart/session, including after add-to-cart when needed.
+* Added linked-product details to the saved offer library.
+* Updated the offer builder UI, WordPress.org metadata and database schema for product-linked offers.
+
+
+= 0.5.1 =
+* Added a persistent professional header navigation menu across every Rejoyan CRM & Campaigns admin screen.
+* Added active-page highlighting, dashboard icons and a quick Create Offer action.
+* Added responsive mobile header navigation with an accessible expand/collapse control.
+* Kept the existing WordPress admin sidebar navigation for familiar WordPress workflows.
+
+= 0.5.0 =
+* Added explainable smart customer segments for VIP, repeat, inactive, new, no-order and recent-buyer audiences.
+* Added configurable VIP spend, inactivity, recent-buyer and new-customer thresholds.
+* Added a Customer Segments dashboard with audience summaries.
+* Added smart-segment targeting to Offer Email Center and standard Campaigns.
+* Segment campaign preparation now runs through the background queue for better large-store reliability.
+* Added reusable offer edit, duplicate, archive and restore actions.
+* Added segment cache invalidation when WooCommerce orders change.
+* Updated WordPress.org metadata and cleanup behavior for the new segment settings.
+
+= 0.4.0 =
+* Added privacy-friendly Delivery Analytics and CSV export.
+* Added 14-day delivery-volume reporting.
+* Added offer preheader, template style and accent-color controls.
+* Added Classic, Minimal and Spotlight offer email layouts.
+* Added WordPress.org release metadata, stable tag, tested-up-to data and GPL license file.
+* Improved privacy exporter/eraser pagination.
+* Improved full uninstall cleanup for Rejoyan CRM & Campaigns user metadata and settings.
+* Added plugin-list Settings shortcut.
+* Added WooCommerce 11.1 tested header.
+
+= 0.3.0 =
+* Added Customer Email Center with all registered customer emails on one screen.
+* Added reusable marketing offers separate from WooCommerce coupons.
+* Added all-customer and selected-customer offer queue flows.
+* Added branded offer-specific HTML email template and personalization.
+* Added compact selected-recipient payload to reduce PHP `max_input_vars` issues.
+* Redesigned Social Studio with editable captions, copy-link and channel share tools.
+* Added offer campaign type and offer database table.
+
+= 0.2.0 =
+* Rebuilt campaign delivery around recipient snapshots and per-recipient states.
+* Added professional responsive admin UI.
+* Added test-email workflow and campaign cancellation.
+* Added coupon/offer builder.
+* Added customer lifetime-value display.
+* Added privacy exporter/eraser support.
+* Added reply-to/footer settings and system diagnostics.
+* Improved security, validation, capability checks and nonce handling.
+
+= 0.1.0 =
+* Initial MVP.
