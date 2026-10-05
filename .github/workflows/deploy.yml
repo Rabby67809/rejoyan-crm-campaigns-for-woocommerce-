@@ -1,1 +1,66 @@
+name: Publish plugin to WordPress.org
 
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wordpress-org-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: ${{ !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out released source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          persist-credentials: false
+
+      - name: Check version and required files
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python3 - <<'PYCODE'
+          import os, re
+          from pathlib import Path
+
+          slug = 'rejoyan-crm-campaigns-for-woocommerce'
+          main = Path(slug + '.php').read_text()
+          readme = Path('readme.txt').read_text()
+          tag = os.environ['RELEASE_TAG']
+
+          header = re.search(r'^\s*\* Version:\s*(\S+)', main, re.M)
+          stable = re.search(r'^Stable tag:\s*(\S+)', readme, re.M)
+          constant = re.search(r"define\(\s*'REJOYAN_CRM_VERSION',\s*'([^']+)'", main)
+
+          assert re.fullmatch(r'\d+\.\d+\.\d+', tag), 'Use a tag like 1.0.0 without v'
+          assert header and stable and constant, 'Version metadata is missing'
+          assert tag == header[1] == stable[1] == constant[1], 'Plugin versions and release tag must match'
+
+          for item in ['includes', 'assets/css/admin.css', 'assets/js/admin.js', 'LICENSE.txt', 'uninstall.php']:
+              assert Path(item).exists(), 'Missing file: ' + item
+
+          print('Version and source layout verified:', tag)
+          PYCODE
+
+      - name: Check PHP and JavaScript syntax
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            php -l "$file"
+          done < <(find . -type f -name '*.php' -print0)
+          node --check assets/js/admin.js
+
+      - name: Deploy to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: rejoyan-crm-campaigns-for-woocommerce
