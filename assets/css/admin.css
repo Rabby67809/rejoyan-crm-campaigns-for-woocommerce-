@@ -1,0 +1,1971 @@
+.rejoyan-crm-wrap {
+    --mf-bg:#f6f7fb;
+    --mf-card:#fff;
+    --mf-border:#e5e7eb;
+    --mf-text:#111827;
+    --mf-muted:#6b7280;
+    --mf-primary:#5b4cf0;
+    --mf-primary-dark:#493bd0;
+    max-width:1480px;
+    color:var(--mf-text)
+}
+.rejoyan-crm-wrap * {
+    box-sizing:border-box
+}
+
+.rejoyan-crm-heading {
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    margin:20px 0 22px
+}
+
+.rejoyan-crm-heading h1 {
+    font-size:30px;
+    line-height:1.15;
+    margin:4px 0 8px;
+    font-weight:700
+}
+
+.rejoyan-crm-heading p {
+    max-width:760px;
+    margin:0;
+    color:var(--mf-muted);
+    font-size:14px
+}
+
+.rejoyan-crm-eyebrow,.rejoyan-crm-label {
+    display:inline-block;
+    color:var(--mf-primary);
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em
+}
+
+.rejoyan-crm-version {
+    background:#eef0ff;
+    color:var(--mf-primary);
+    padding:7px 10px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:12px
+}
+
+.rejoyan-crm-grid {
+    display:grid;
+    gap:18px
+}
+
+.rejoyan-crm-stats {
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    margin-bottom:18px
+}
+
+.rejoyan-crm-two {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    margin-bottom:18px
+}
+
+.rejoyan-crm-campaign-layout {
+    grid-template-columns:minmax(320px,.8fr) minmax(560px,1.6fr);
+    align-items:start
+}
+
+.rejoyan-crm-form-two {
+    grid-template-columns:repeat(2,minmax(0,1fr))
+}
+
+.rejoyan-crm-card {
+    background:var(--mf-card);
+    border:1px solid var(--mf-border);
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 1px 2px rgba(15,23,42,.03)
+}
+
+.rejoyan-crm-card h2 {
+    margin:5px 0 14px;
+    font-size:18px
+}
+
+.rejoyan-crm-stat {
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-height:116px
+}
+
+.rejoyan-crm-stat>.dashicons {
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    background:#f1f0ff;
+    color:var(--mf-primary);
+    font-size:22px
+}
+
+.rejoyan-crm-stat strong {
+    display:block;
+    font-size:26px;
+    line-height:1.1
+}
+
+.rejoyan-crm-stat small {
+    display:block;
+    color:var(--mf-muted);
+    font-weight:600;
+    margin-top:4px
+}
+
+.rejoyan-crm-stat em {
+    display:block;
+    color:#9ca3af;
+    font-style:normal;
+    font-size:11px;
+    margin-top:4px
+}
+
+.rejoyan-crm-hero-card {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    background:linear-gradient(135deg,#171a2b 0%,#27214f 100%);
+    color:#fff;
+    border:0
+}
+
+.rejoyan-crm-hero-card p {
+    color:#d8d9e4;
+    max-width:560px
+}
+
+.rejoyan-crm-hero-card .rejoyan-crm-label {
+    color:#bdb7ff
+}
+
+.rejoyan-crm-actions {
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    align-items:center
+}
+
+.rejoyan-crm-wrap .button-primary {
+    background:var(--mf-primary);
+    border-color:var(--mf-primary)
+}
+
+.rejoyan-crm-wrap .button-primary:hover,.rejoyan-crm-wrap .button-primary:focus {
+    background:var(--mf-primary-dark);
+    border-color:var(--mf-primary-dark)
+}
+
+.rejoyan-crm-section-head {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:12px
+}
+
+.rejoyan-crm-section-head h2 {
+    margin-bottom:0
+}
+
+.rejoyan-crm-health {
+    display:inline-flex;
+    padding:6px 9px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:700
+}
+
+.rejoyan-crm-health-good {
+    background:#ecfdf3;
+    color:#137a42
+}
+
+.rejoyan-crm-table-card {
+    padding:0;
+    overflow:hidden
+}
+
+.rejoyan-crm-table-card .description {
+    padding:0 20px 18px
+}
+
+.rejoyan-crm-table-scroll {
+    overflow-x:auto
+}
+
+.rejoyan-crm-wrap table.widefat {
+    border:0;
+    box-shadow:none
+}
+
+.rejoyan-crm-wrap table.widefat thead th {
+    background:#f8fafc;
+    color:#475569;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    border-bottom:1px solid var(--mf-border);
+    padding:12px 14px
+}
+
+.rejoyan-crm-wrap table.widefat td {
+    padding:13px 14px;
+    vertical-align:middle
+}
+
+.rejoyan-crm-subject {
+    display:block;
+    color:var(--mf-muted);
+    margin-top:3px
+}
+
+.rejoyan-crm-status {
+    display:inline-flex;
+    padding:5px 8px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:700;
+    background:#f3f4f6;
+    color:#4b5563
+}
+
+.rejoyan-crm-status.good {
+    background:#ecfdf3;
+    color:#137a42
+}
+
+.rejoyan-crm-status.bad {
+    background:#fef2f2;
+    color:#b42318
+}
+
+.rejoyan-crm-status.neutral {
+    background:#f3f4f6;
+    color:#4b5563
+}
+
+.rejoyan-crm-customer {
+    display:flex;
+    align-items:center;
+    gap:10px
+}
+
+.rejoyan-crm-customer small {
+    display:block;
+    color:#9ca3af
+}
+
+.rejoyan-crm-avatar {
+    width:34px;
+    height:34px;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    background:#eef0ff;
+    color:var(--mf-primary);
+    font-weight:800
+}
+
+.rejoyan-crm-toolbar {
+    display:flex;
+    gap:8px;
+    margin-bottom:14px
+}
+
+.rejoyan-crm-toolbar input[type=search] {
+    min-width:300px
+}
+
+.rejoyan-crm-pagination {
+    padding:14px 18px
+}
+
+.rejoyan-crm-pagination .page-numbers {
+    display:inline-flex;
+    padding:6px 9px;
+    margin-right:4px;
+    border:1px solid var(--mf-border);
+    border-radius:7px;
+    text-decoration:none
+}
+
+.rejoyan-crm-pagination .current {
+    background:#111827;
+    color:#fff
+}
+
+.rejoyan-crm-field {
+    margin-bottom:16px
+}
+
+.rejoyan-crm-field label {
+    display:block;
+    font-weight:650;
+    margin-bottom:6px
+}
+
+.rejoyan-crm-field small {
+    display:block;
+    color:var(--mf-muted);
+    margin-top:5px
+}
+
+.rejoyan-crm-field input,.rejoyan-crm-field select,.rejoyan-crm-field textarea {
+    border-color:#d6d9df;
+    border-radius:8px;
+    min-height:40px
+}
+
+.rejoyan-crm-field textarea {
+    line-height:1.5
+}
+
+.rejoyan-crm-compose {
+    position:sticky;
+    top:46px
+}
+
+.rejoyan-crm-row-actions {
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    align-items:center
+}
+
+.rejoyan-crm-row-actions form {
+    margin:0
+}
+
+.rejoyan-crm-test-form {
+    display:flex;
+    gap:5px
+}
+
+.rejoyan-crm-test-form input {
+    width:160px;
+    min-height:30px
+}
+
+.rejoyan-crm-progress {
+    height:7px;
+    background:#eef0f3;
+    border-radius:999px;
+    overflow:hidden;
+    min-width:120px;
+    margin-bottom:4px
+}
+
+.rejoyan-crm-progress span {
+    display:block;
+    height:100%;
+    background:var(--mf-primary);
+    border-radius:999px
+}
+
+.rejoyan-crm-offer-list {
+    display:flex;
+    flex-direction:column;
+    gap:10px
+}
+
+.rejoyan-crm-offer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 14px;
+    border:1px solid var(--mf-border);
+    border-radius:10px
+}
+
+.rejoyan-crm-offer code {
+    font-weight:700;
+    font-size:14px
+}
+
+.rejoyan-crm-offer small {
+    display:block;
+    color:var(--mf-muted);
+    margin-top:3px
+}
+
+.rejoyan-crm-product-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px
+}
+
+.rejoyan-crm-product {
+    padding:0;
+    overflow:hidden
+}
+
+.rejoyan-crm-product-media {
+    aspect-ratio:16/9;
+    background:#f4f5f7;
+    display:grid;
+    place-items:center;
+    overflow:hidden
+}
+
+.rejoyan-crm-product-media img {
+    width:100%;
+    height:100%;
+    object-fit:cover
+}
+
+.rejoyan-crm-product-media>.dashicons {
+    font-size:40px;
+    color:#9ca3af;
+    width:40px;
+    height:40px
+}
+
+.rejoyan-crm-product-body {
+    padding:18px
+}
+
+.rejoyan-crm-product-body h3 {
+    margin:0 0 4px
+}
+
+.rejoyan-crm-price {
+    margin:0 0 12px;
+    font-weight:700
+}
+
+.rejoyan-crm-caption {
+    width:100%;
+    min-height:72px;
+    border-radius:8px;
+    border-color:#d6d9df;
+    margin-bottom:10px
+}
+
+.rejoyan-crm-narrow {
+    max-width:760px
+}
+
+.rejoyan-crm-check {
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
+    margin:8px 0 18px
+}
+
+.rejoyan-crm-health-list {
+    display:flex;
+    flex-direction:column
+}
+
+.rejoyan-crm-health-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:11px 0;
+    border-bottom:1px solid var(--mf-border)
+}
+
+.rejoyan-crm-health-row strong.good {
+    color:#137a42
+}
+
+.rejoyan-crm-health-row strong.bad {
+    color:#b42318
+}
+
+.rejoyan-crm-inline-form {
+    margin:0
+}
+
+.rejoyan-crm-wrap-actions {
+    row-gap:7px
+}
+@media (max-width:1200px) {
+    .rejoyan-crm-stats {
+        grid-template-columns:repeat(2,1fr)
+    }
+
+    .rejoyan-crm-product-grid {
+        grid-template-columns:repeat(2,1fr)
+    }
+
+    .rejoyan-crm-campaign-layout {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-compose {
+        position:static
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-heading {
+        flex-direction:column
+    }
+
+    .rejoyan-crm-stats,.rejoyan-crm-two,.rejoyan-crm-form-two,.rejoyan-crm-product-grid {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-hero-card {
+        align-items:flex-start;
+        flex-direction:column
+    }
+
+    .rejoyan-crm-toolbar {
+        flex-wrap:wrap
+    }
+
+    .rejoyan-crm-toolbar input[type=search] {
+        min-width:0;
+        width:100%
+    }
+
+    .rejoyan-crm-card {
+        padding:17px
+    }
+
+    .rejoyan-crm-product {
+        padding:0
+    }
+
+}
+/* v0.3 Email Center & Offer Studio */
+.rejoyan-crm-email-summary {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    margin-bottom:18px
+}
+.rejoyan-crm-email-center-layout {
+    grid-template-columns:minmax(620px,1.65fr) minmax(320px,.75fr);
+    align-items:start
+}
+.rejoyan-crm-email-list-card {
+    padding:0;
+    overflow:hidden
+}
+
+.rejoyan-crm-email-head {
+    padding:22px 22px 12px;
+    margin:0
+}
+
+.rejoyan-crm-email-head p {
+    margin:5px 0 0;
+    color:var(--mf-muted)
+}
+.rejoyan-crm-email-tools {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap
+}
+
+.rejoyan-crm-email-tools input {
+    min-width:270px
+}
+
+.rejoyan-crm-selection-count {
+    display:inline-flex;
+    background:#eef0ff;
+    color:var(--mf-primary);
+    border-radius:999px;
+    padding:7px 10px;
+    font-size:12px;
+    font-weight:700
+}
+.rejoyan-crm-select-all-bar {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:12px 20px;
+    background:#f8fafc;
+    border-top:1px solid var(--mf-border);
+    border-bottom:1px solid var(--mf-border)
+}
+
+.rejoyan-crm-select-all-bar label {
+    display:flex;
+    align-items:center;
+    gap:7px
+}
+
+.rejoyan-crm-select-all-bar span {
+    color:var(--mf-muted);
+    font-size:12px
+}
+.rejoyan-crm-email-table-wrap {
+    max-height:720px;
+    overflow:auto
+}
+
+.rejoyan-crm-email-table thead th {
+    position:sticky;
+    top:0;
+    z-index:3
+}
+
+.rejoyan-crm-invalid-email {
+    display:block;
+    color:#b42318;
+    margin-top:3px
+}
+
+.rejoyan-crm-email-table .check-column {
+    width:42px;
+    text-align:center
+}
+.rejoyan-crm-offer-send-panel {
+    position:sticky;
+    top:46px
+}
+
+.rejoyan-crm-offer-send-panel .button-hero {
+    width:100%;
+    justify-content:center;
+    min-height:46px;
+    display:flex;
+    align-items:center
+}
+
+.rejoyan-crm-secondary-action {
+    width:100%;
+    margin-top:8px;
+    text-align:center
+}
+.rejoyan-crm-mini-email {
+    border:1px solid var(--mf-border);
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff;
+    margin:12px 0 16px;
+    box-shadow:0 8px 22px rgba(15,23,42,.05)
+}
+
+.rejoyan-crm-mini-email-top {
+    background:#111827;
+    color:#fff;
+    padding:14px 16px;
+    font-weight:800
+}
+
+.rejoyan-crm-mini-email-body {
+    padding:18px
+}
+
+.rejoyan-crm-mini-email-body h3 {
+    font-size:21px;
+    line-height:1.25;
+    margin:10px 0
+}
+
+.rejoyan-crm-mini-email-body p {
+    color:#4b5563;
+    line-height:1.55
+}
+
+.rejoyan-crm-mini-badge {
+    display:inline-flex;
+    padding:5px 8px;
+    border-radius:999px;
+    background:#ede9fe;
+    color:#5b21b6;
+    font-size:10px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.06em
+}
+
+.rejoyan-crm-mini-subject {
+    display:block;
+    color:#6b7280;
+    margin-top:10px
+}
+
+.rejoyan-crm-mini-coupon {
+    padding:12px;
+    border:1px dashed #8b5cf6;
+    background:#faf7ff;
+    border-radius:9px;
+    text-align:center;
+    color:#312e81;
+    font-weight:800;
+    margin:14px 0
+}
+
+.rejoyan-crm-mini-cta {
+    display:inline-block;
+    padding:9px 13px;
+    border-radius:8px;
+    background:var(--mf-primary);
+    color:#fff;
+    font-weight:700;
+    margin-top:4px
+}
+
+.rejoyan-crm-mini-expiry {
+    display:block;
+    color:#6b7280;
+    margin-top:10px
+}
+
+.rejoyan-crm-send-rules {
+    padding:13px 14px;
+    border-radius:10px;
+    background:#fff8e6;
+    border:1px solid #f6d98a;
+    margin:14px 0
+}
+
+.rejoyan-crm-send-rules p {
+    margin:5px 0 0;
+    color:#6b5b2a;
+    font-size:12px;
+    line-height:1.5
+}
+
+.rejoyan-crm-consent-check {
+    font-size:12px;
+    line-height:1.45
+}
+.rejoyan-crm-empty-state {
+    text-align:center;
+    padding:48px 24px
+}
+
+.rejoyan-crm-empty-state>.dashicons {
+    font-size:44px;
+    width:44px;
+    height:44px;
+    color:var(--mf-primary)
+}
+.rejoyan-crm-type-pill {
+    display:inline-flex;
+    padding:4px 7px;
+    border-radius:999px;
+    background:#eef0ff;
+    color:var(--mf-primary);
+    font-size:10px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.05em
+}
+.rejoyan-crm-offer-builder-layout {
+    grid-template-columns:minmax(560px,1.15fr) minmax(420px,.85fr);
+    align-items:start;
+    margin-bottom:18px
+}
+
+.rejoyan-crm-offer-library {
+    display:grid;
+    gap:12px
+}
+
+.rejoyan-crm-offer-library-card {
+    border:1px solid var(--mf-border);
+    border-radius:13px;
+    padding:16px;
+    background:#fff
+}
+
+.rejoyan-crm-offer-library-card h3 {
+    margin:10px 0 6px;
+    font-size:17px
+}
+
+.rejoyan-crm-offer-library-card p {
+    color:var(--mf-muted);
+    margin:0 0 12px
+}
+
+.rejoyan-crm-offer-library-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.rejoyan-crm-offer-library-top small {
+    color:#9ca3af
+}
+
+.rejoyan-crm-offer-meta {
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-bottom:12px
+}
+
+.rejoyan-crm-offer-meta code {
+    align-self:flex-start;
+    background:#f5f3ff;
+    color:#5b21b6;
+    border-radius:6px;
+    padding:4px 7px;
+    font-weight:800
+}
+
+.rejoyan-crm-offer-meta span {
+    color:#475569;
+    font-size:12px
+}
+
+.rejoyan-crm-coupon-section {
+    margin-top:0
+}
+.rejoyan-crm-social-intro {
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center;
+    margin-bottom:18px
+}
+
+.rejoyan-crm-social-intro h2 {
+    margin-bottom:5px
+}
+
+.rejoyan-crm-social-intro p {
+    margin:0;
+    color:var(--mf-muted)
+}
+
+.rejoyan-crm-social-legend {
+    display:flex;
+    gap:7px;
+    flex-wrap:wrap
+}
+
+.rejoyan-crm-social-legend span {
+    background:#f3f4f6;
+    border-radius:999px;
+    padding:6px 9px;
+    font-size:11px;
+    font-weight:700;
+    color:#475569
+}
+
+.rejoyan-crm-social-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr))
+}
+
+.rejoyan-crm-social-product {
+    transition:transform .16s ease,box-shadow .16s ease
+}
+
+.rejoyan-crm-social-product:hover {
+    transform:translateY(-2px);
+    box-shadow:0 10px 26px rgba(15,23,42,.08)
+}
+
+.rejoyan-crm-product-media {
+    position:relative
+}
+
+.rejoyan-crm-sale-badge {
+    position:absolute;
+    top:12px;
+    left:12px;
+    z-index:2;
+    background:#dc2626;
+    color:#fff;
+    padding:6px 9px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:800
+}
+
+.rejoyan-crm-product-title-row {
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:12px
+}
+
+.rejoyan-crm-product-title-row small {
+    color:#6b7280
+}
+
+.rejoyan-crm-product-title-row .rejoyan-crm-price {
+    white-space:nowrap
+}
+
+.rejoyan-crm-caption-label {
+    display:block;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:6px
+}
+
+.rejoyan-crm-social-caption {
+    min-height:110px;
+    resize:vertical
+}
+
+.rejoyan-crm-link-strip {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#f8fafc;
+    border:1px solid var(--mf-border);
+    border-radius:9px;
+    padding:8px;
+    margin-bottom:10px
+}
+
+.rejoyan-crm-link-strip code {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    flex:1;
+    font-size:11px
+}
+
+.rejoyan-crm-social-actions .button {
+    flex:1 1 auto;
+    text-align:center
+}
+@media (max-width:1280px) {
+    .rejoyan-crm-email-center-layout,.rejoyan-crm-offer-builder-layout {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-offer-send-panel {
+        position:static
+    }
+
+    .rejoyan-crm-social-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-email-summary,.rejoyan-crm-social-grid {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-email-head,.rejoyan-crm-social-intro {
+        align-items:flex-start;
+        flex-direction:column
+    }
+
+    .rejoyan-crm-email-tools,.rejoyan-crm-email-tools input {
+        width:100%
+    }
+
+    .rejoyan-crm-select-all-bar {
+        align-items:flex-start;
+        flex-direction:column
+    }
+
+    .rejoyan-crm-email-table-wrap {
+        max-height:none
+    }
+
+    .rejoyan-crm-product-title-row {
+        flex-direction:column
+    }
+
+    .rejoyan-crm-link-strip {
+        align-items:stretch;
+        flex-direction:column
+    }
+
+}
+/* v0.4 Template Studio & Delivery Analytics */
+.rejoyan-crm-color-input {
+    width:72px;
+    height:40px;
+    padding:3px;
+    border:1px solid var(--mf-border);
+    border-radius:8px;
+    background:#fff
+}
+
+.rejoyan-crm-mini-email[data-template="minimal"] {
+    border-radius:0;
+    box-shadow:none
+}
+
+.rejoyan-crm-mini-email[data-template="minimal"] .rejoyan-crm-mini-email-top {
+    border-bottom:1px solid var(--mf-border)
+}
+
+.rejoyan-crm-mini-email[data-template="spotlight"] {
+    box-shadow:0 14px 34px rgba(15,23,42,.10)
+}
+.rejoyan-crm-bars {
+    height:260px;
+    display:flex;
+    align-items:flex-end;
+    gap:8px;
+    padding-top:18px;
+    overflow-x:auto
+}
+
+.rejoyan-crm-bar-item {
+    min-width:38px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px
+}
+
+.rejoyan-crm-bar-track {
+    width:100%;
+    height:180px;
+    background:#f2f4f8;
+    border-radius:8px;
+    display:flex;
+    align-items:flex-end;
+    overflow:hidden
+}
+
+.rejoyan-crm-bar-track span {
+    display:block;
+    width:100%;
+    min-height:3px;
+    background:var(--mf-primary);
+    border-radius:8px 8px 0 0
+}
+
+.rejoyan-crm-bar-item small {
+    font-size:10px;
+    color:var(--mf-muted);
+    white-space:nowrap
+}
+
+.rejoyan-crm-bar-item strong {
+    font-size:11px
+}
+
+.rejoyan-crm-report-kpis {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin:18px 0
+}
+
+.rejoyan-crm-report-kpis>div {
+    border:1px solid var(--mf-border);
+    border-radius:10px;
+    padding:14px;
+    background:#f8fafc
+}
+
+.rejoyan-crm-report-kpis strong {
+    display:block;
+    font-size:24px
+}
+
+.rejoyan-crm-report-kpis small {
+    color:var(--mf-muted)
+}
+
+.rejoyan-crm-table-note {
+    display:block;
+    color:var(--mf-muted);
+    font-size:11px;
+    margin-top:3px
+}
+@media (max-width:782px) {
+    .rejoyan-crm-bars {
+        height:220px
+    }
+
+    .rejoyan-crm-bar-track {
+        height:145px
+    }
+
+    .rejoyan-crm-bar-item {
+        min-width:34px
+    }
+
+}
+/* v0.5 Smart Segments & Offer Lifecycle */
+.rejoyan-crm-segment-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    margin-bottom:18px
+}
+
+.rejoyan-crm-segment-card {
+    display:flex;
+    flex-direction:column;
+    min-height:210px
+}
+
+.rejoyan-crm-segment-card p {
+    color:var(--mf-muted);
+    line-height:1.55;
+    flex:1
+}
+
+.rejoyan-crm-segment-count {
+    display:grid;
+    place-items:center;
+    min-width:52px;
+    height:52px;
+    padding:0 12px;
+    border-radius:14px;
+    background:#eef0ff;
+    color:var(--mf-primary);
+    font-size:22px
+}
+
+.rejoyan-crm-segment-settings {
+    margin:20px 0;
+    padding:16px;
+    border:1px solid var(--mf-border);
+    border-radius:12px;
+    background:#f8fafc
+}
+
+.rejoyan-crm-segment-settings h3 {
+    margin:0 0 6px
+}
+
+.rejoyan-crm-offer-actions form {
+    margin:0
+}
+
+.rejoyan-crm-offer-actions {
+    margin-top:12px
+}
+
+.rejoyan-crm-offer-library-card .rejoyan-crm-status {
+    margin-left:auto
+}
+@media (max-width:1100px) {
+    .rejoyan-crm-segment-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-segment-grid {
+        grid-template-columns:1fr
+    }
+
+}
+/* v0.5.1 Global Header Navigation */
+.rejoyan-crm-header-menu-shell {
+    position:sticky;
+    top:32px;
+    z-index:40;
+    margin:18px 0 20px;
+    background:rgba(255,255,255,.96);
+    border:1px solid var(--mf-border);
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+    backdrop-filter:blur(12px);
+    overflow:hidden
+}
+
+.rejoyan-crm-header-menu-top {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:14px 16px;
+    border-bottom:1px solid var(--mf-border)
+}
+
+.rejoyan-crm-header-brand {
+    display:flex;
+    align-items:center;
+    gap:11px;
+    min-width:0
+}
+
+.rejoyan-crm-header-logo {
+    display:grid;
+    place-items:center;
+    width:38px;
+    height:38px;
+    border-radius:11px;
+    background:linear-gradient(135deg,var(--mf-primary),#7c3aed);
+    color:#fff;
+    font-size:20px
+}
+
+.rejoyan-crm-header-brand strong {
+    display:block;
+    font-size:15px;
+    line-height:1.1
+}
+
+.rejoyan-crm-header-brand small {
+    display:block;
+    margin-top:3px;
+    color:var(--mf-muted);
+    font-size:11px
+}
+
+.rejoyan-crm-header-quick {
+    display:flex;
+    align-items:center;
+    gap:8px
+}
+
+.rejoyan-crm-menu-toggle {
+    display:none!important;
+    align-items:center;
+    gap:5px
+}
+
+.rejoyan-crm-header-nav {
+    display:flex;
+    align-items:center;
+    gap:4px;
+    padding:8px;
+    overflow-x:auto;
+    scrollbar-width:thin
+}
+
+.rejoyan-crm-header-link {
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    min-height:42px;
+    padding:8px 11px;
+    border-radius:9px;
+    color:#475569;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+    transition:background .15s ease,color .15s ease,transform .15s ease
+}
+
+.rejoyan-crm-header-link .dashicons {
+    width:18px;
+    height:18px;
+    font-size:18px
+}
+
+.rejoyan-crm-header-link:hover,.rejoyan-crm-header-link:focus {
+    background:#f5f3ff;
+    color:var(--mf-primary);
+    outline:none
+}
+
+.rejoyan-crm-header-link.is-active {
+    background:#eef0ff;
+    color:var(--mf-primary)
+}
+
+.rejoyan-crm-header-link.is-active:after {
+    content:"";
+    position:absolute;
+    left:11px;
+    right:11px;
+    bottom:3px;
+    height:2px;
+    border-radius:999px;
+    background:var(--mf-primary)
+}
+@media (max-width:960px) {
+    .rejoyan-crm-header-link {
+        padding:8px 9px
+    }
+
+    .rejoyan-crm-header-link span:last-child {
+        font-size:11px
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-header-menu-shell {
+        top:46px;
+        margin-top:12px;
+        border-radius:13px
+    }
+
+    .rejoyan-crm-header-menu-top {
+        padding:11px 12px
+    }
+
+    .rejoyan-crm-header-brand small {
+        display:none
+    }
+
+    .rejoyan-crm-header-quick>.button-primary {
+        display:none
+    }
+
+    .rejoyan-crm-menu-toggle {
+        display:inline-flex!important
+    }
+
+    .rejoyan-crm-header-nav {
+        display:none;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:6px;
+        padding:10px;
+        overflow:visible
+    }
+
+    .rejoyan-crm-header-nav.is-open {
+        display:grid
+    }
+
+    .rejoyan-crm-header-link {
+        width:100%;
+        min-height:44px;
+        padding:9px 10px
+    }
+
+    .rejoyan-crm-header-link.is-active:after {
+        left:10px;
+        right:10px
+    }
+
+    .rejoyan-crm-heading {
+        margin-top:16px
+    }
+
+}
+@media (max-width:480px) {
+    .rejoyan-crm-header-nav {
+        grid-template-columns:1fr
+    }
+
+}
+/* v0.6 Ready-made Offer Templates & Product-linked Offers */
+.rejoyan-crm-template-library {
+    margin-bottom:18px
+}
+
+.rejoyan-crm-template-count {
+    display:inline-flex;
+    align-items:center;
+    padding:6px 10px;
+    border-radius:999px;
+    background:#eef0ff;
+    color:var(--mf-primary);
+    font-size:11px;
+    font-weight:800
+}
+
+.rejoyan-crm-template-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin-top:16px
+}
+
+.rejoyan-crm-template-card {
+    position:relative;
+    display:grid;
+    grid-template-columns:48px minmax(0,1fr);
+    gap:12px;
+    align-items:start;
+    padding:14px;
+    border:1px solid var(--mf-border);
+    border-radius:13px;
+    background:#fff;
+    transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease
+}
+
+.rejoyan-crm-template-card:hover {
+    transform:translateY(-1px);
+    box-shadow:0 8px 22px rgba(15,23,42,.06)
+}
+
+.rejoyan-crm-template-card.is-selected {
+    border-color:var(--mf-primary);
+    box-shadow:0 0 0 2px rgba(91,76,240,.10)
+}
+
+.rejoyan-crm-template-card h3 {
+    margin:1px 0 5px;
+    font-size:15px
+}
+
+.rejoyan-crm-template-card p {
+    margin:0 0 9px;
+    color:var(--mf-muted);
+    font-size:12px;
+    line-height:1.45
+}
+
+.rejoyan-crm-template-card>.button {
+    grid-column:1/-1;
+    justify-self:start
+}
+
+.rejoyan-crm-template-swatch {
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    border-radius:12px;
+    background:#f8fafc;
+    background:color-mix(in srgb,var(--mf-template-accent) 12%,#fff);
+    color:var(--mf-template-accent)
+}
+
+.rejoyan-crm-template-swatch .dashicons {
+    font-size:21px;
+    width:21px;
+    height:21px
+}
+
+.rejoyan-crm-template-meta {
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap
+}
+
+.rejoyan-crm-template-meta span {
+    padding:4px 7px;
+    border-radius:999px;
+    background:#f8fafc;
+    color:#64748b;
+    font-size:10px;
+    font-weight:700
+}
+
+.rejoyan-crm-product-link-box {
+    margin:18px 0;
+    padding:16px;
+    border:1px solid #dbeafe;
+    border-radius:13px;
+    background:#f8fbff
+}
+
+.rejoyan-crm-product-link-box .rejoyan-crm-section-head {
+    margin-bottom:12px
+}
+
+.rejoyan-crm-product-link-box h3 {
+    margin:3px 0 5px;
+    font-size:16px
+}
+
+.rejoyan-crm-product-link-box p {
+    margin:0;
+    color:#64748b;
+    font-size:12px
+}
+
+.rejoyan-crm-checkbox-line {
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    margin-top:12px;
+    padding:12px;
+    border:1px solid var(--mf-border);
+    border-radius:10px;
+    background:#fff
+}
+
+.rejoyan-crm-checkbox-line input {
+    margin-top:3px
+}
+
+.rejoyan-crm-checkbox-line strong,.rejoyan-crm-checkbox-line small {
+    display:block
+}
+
+.rejoyan-crm-checkbox-line small {
+    margin-top:4px;
+    color:var(--mf-muted);
+    line-height:1.45
+}
+
+.rejoyan-crm-product-chip {
+    display:inline-flex!important;
+    align-items:center;
+    gap:5px;
+    align-self:flex-start;
+    padding:5px 8px;
+    border-radius:999px;
+    background:#ecfdf5;
+    color:#047857!important;
+    font-weight:700
+}
+
+.rejoyan-crm-product-chip .dashicons {
+    width:15px;
+    height:15px;
+    font-size:15px
+}
+
+.rejoyan-crm-product-link-box .select2-container,.rejoyan-crm-product-link-box .selectWoo-container {
+    max-width:100%
+}
+@media (max-width:1200px) {
+    .rejoyan-crm-template-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-template-grid {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-template-count {
+        display:none
+    }
+
+}
+.rejoyan-crm-mini-product {
+    margin:12px 0;
+    padding:10px 12px;
+    border-radius:9px;
+    background:#f8fafc;
+    border:1px solid var(--mf-border);
+    font-size:12px;
+    font-weight:800;
+    color:#334155
+}
+.rejoyan-crm-lazy {
+    min-height:var(--mf-lazy-min-height,260px);
+    position:relative;
+    contain:layout style
+}
+
+.rejoyan-crm-lazy.is-loaded {
+    min-height:0;
+    contain:none
+}
+
+.rejoyan-crm-skeleton-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+    min-height:inherit
+}
+
+.rejoyan-crm-skeleton-card {
+    display:block;
+    min-height:116px;
+    border:1px solid var(--mf-border);
+    border-radius:16px;
+    background:linear-gradient(90deg,#f4f5f7 25%,#fafafa 37%,#f4f5f7 63%);
+    background-size:400% 100%;
+    animation:rejoyan-crm-skeleton 1.25s ease-in-out infinite
+}
+
+.rejoyan-crm-lazy-error {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    min-height:110px
+}
+
+.rejoyan-crm-social-product {
+    content-visibility:auto;
+    contain-intrinsic-size:520px
+}
+
+.rejoyan-crm-campaign-history-shell {
+    min-width:0
+}
+
+@keyframes rejoyan-crm-skeleton {
+    0% {
+        background-position:100% 0
+    }
+
+    100% {
+        background-position:0 0
+    }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .rejoyan-crm-skeleton-card {
+        animation:none
+    }
+
+}
+
+@media (max-width:782px) {
+    .rejoyan-crm-skeleton-grid {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-lazy-error {
+        align-items:flex-start;
+        flex-direction:column
+    }
+
+}
+/* v0.7 Live Product Social Studio */
+.rejoyan-crm-social-browser {
+    display:block
+}
+
+.rejoyan-crm-live-product-pill {
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:9px 12px;
+    border:1px solid #d1fae5;
+    border-radius:999px;
+    background:#ecfdf5;
+    color:#065f46;
+    white-space:nowrap
+}
+
+.rejoyan-crm-live-product-pill strong {
+    font-size:15px
+}
+
+.rejoyan-crm-live-product-pill span:last-child {
+    font-size:11px;
+    font-weight:700
+}
+
+.rejoyan-crm-live-dot {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#10b981;
+    box-shadow:0 0 0 4px rgba(16,185,129,.13)
+}
+.rejoyan-crm-social-toolbar {
+    display:grid;
+    grid-template-columns:minmax(240px,1.4fr) minmax(180px,.8fr) minmax(180px,.8fr) minmax(220px,1fr);
+    gap:12px;
+    align-items:end;
+    margin-bottom:18px;
+    padding:16px 18px
+}
+
+.rejoyan-crm-social-filter label {
+    display:block;
+    margin-bottom:5px;
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    color:#64748b
+}
+
+.rejoyan-crm-social-filter input,.rejoyan-crm-social-filter select {
+    width:100%;
+    min-height:40px;
+    border-color:#d6d9df;
+    border-radius:9px
+}
+
+.rejoyan-crm-social-toolbar-note {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    min-height:40px;
+    padding:9px 11px;
+    border-radius:9px;
+    background:#f8fafc;
+    color:#64748b;
+    font-size:11px;
+    line-height:1.35
+}
+
+.rejoyan-crm-social-toolbar-note .dashicons {
+    color:var(--mf-primary)
+}
+.rejoyan-crm-social-results {
+    position:relative
+}
+
+.rejoyan-crm-social-browser.is-loading-products .rejoyan-crm-social-grid {
+    opacity:.52;
+    pointer-events:none
+}
+
+.rejoyan-crm-social-grid {
+    transition:opacity .16s ease
+}
+
+.rejoyan-crm-social-load-wrap {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:20px 0 4px
+}
+
+.rejoyan-crm-social-load-wrap .spinner {
+    float:none;
+    margin:0
+}
+
+.rejoyan-crm-social-load-more {
+    min-width:190px
+}
+.rejoyan-crm-live-product-badge {
+    position:absolute;
+    top:12px;
+    right:12px;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:6px 9px;
+    border-radius:999px;
+    background:rgba(255,255,255,.92);
+    box-shadow:0 5px 18px rgba(15,23,42,.10);
+    font-size:10px;
+    font-weight:900;
+    color:#047857;
+    backdrop-filter:blur(8px)
+}
+
+.rejoyan-crm-live-product-badge .rejoyan-crm-live-dot {
+    width:6px;
+    height:6px;
+    box-shadow:0 0 0 3px rgba(16,185,129,.12)
+}
+
+.rejoyan-crm-no-product-image {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    color:#94a3b8
+}
+
+.rejoyan-crm-no-product-image .dashicons {
+    width:34px;
+    height:34px;
+    font-size:34px
+}
+
+.rejoyan-crm-product-meta-line {
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    margin-bottom:8px
+}
+
+.rejoyan-crm-product-meta-line span {
+    display:inline-flex;
+    padding:4px 7px;
+    border-radius:999px;
+    background:#f8fafc;
+    color:#64748b;
+    font-size:10px;
+    font-weight:700
+}
+
+.rejoyan-crm-stock-state {
+    display:inline-flex!important;
+    align-items:center;
+    gap:5px;
+    margin-top:5px;
+    font-weight:700
+}
+
+.rejoyan-crm-stock-state.is-in-stock {
+    color:#047857!important
+}
+
+.rejoyan-crm-stock-state.is-out-stock {
+    color:#b42318!important
+}
+
+.rejoyan-crm-product-quick-actions {
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    margin:2px 0 14px
+}
+
+.rejoyan-crm-product-quick-actions .button {
+    display:inline-flex;
+    align-items:center;
+    gap:5px
+}
+
+.rejoyan-crm-product-quick-actions .dashicons {
+    width:15px;
+    height:15px;
+    font-size:15px;
+    margin-top:2px
+}
+.rejoyan-crm-social-share-block {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    padding-top:14px;
+    border-top:1px solid var(--mf-border)
+}
+
+.rejoyan-crm-social-share-block>div:first-child strong,.rejoyan-crm-social-share-block>div:first-child small {
+    display:block
+}
+
+.rejoyan-crm-social-share-block>div:first-child small {
+    margin-top:3px;
+    color:var(--mf-muted);
+    font-size:10px
+}
+
+.rejoyan-crm-social-iconbar {
+    display:flex;
+    gap:9px;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:flex-end
+}
+
+.rejoyan-crm-social-icon-btn {
+    --mf-share-bg:#64748b;
+    --mf-share-dark:#475569;
+    position:relative;
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    padding:0;
+    border:0!important;
+    border-radius:14px!important;
+    background:var(--mf-share-bg)!important;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--mf-share-bg) 85%,#fff),var(--mf-share-bg))!important;
+    color:#fff!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 5px rgba(0,0,0,.12),0 5px 0 var(--mf-share-dark),0 9px 18px rgba(15,23,42,.18)!important;
+    cursor:pointer;
+    transform:translateY(0);
+    transition:transform .13s ease,box-shadow .13s ease,filter .13s ease
+}
+
+.rejoyan-crm-social-icon-btn:hover,.rejoyan-crm-social-icon-btn:focus {
+    transform:translateY(-2px);
+    filter:saturate(1.08) brightness(1.03);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -2px 5px rgba(0,0,0,.10),0 7px 0 var(--mf-share-dark),0 12px 22px rgba(15,23,42,.22)!important;
+    outline:2px solid rgba(91,76,240,.2);
+    outline-offset:2px
+}
+
+.rejoyan-crm-social-icon-btn:active {
+    transform:translateY(3px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -2px 5px rgba(0,0,0,.15),0 2px 0 var(--mf-share-dark),0 5px 10px rgba(15,23,42,.16)!important
+}
+
+.rejoyan-crm-share-glyph {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    font-weight:900;
+    line-height:1;
+    letter-spacing:-.04em;
+    text-shadow:0 1px 1px rgba(0,0,0,.18)
+}
+
+.rejoyan-crm-share-facebook {
+    --mf-share-bg:#1877f2;
+    --mf-share-dark:#0d4fa8
+}
+
+.rejoyan-crm-share-x {
+    --mf-share-bg:#171717;
+    --mf-share-dark:#000
+}
+
+.rejoyan-crm-share-linkedin {
+    --mf-share-bg:#0a66c2;
+    --mf-share-dark:#064783
+}
+
+.rejoyan-crm-share-whatsapp {
+    --mf-share-bg:#25d366;
+    --mf-share-dark:#128c43
+}
+
+.rejoyan-crm-share-native {
+    --mf-share-bg:#7c3aed;
+    --mf-share-dark:#5b21b6
+}
+
+.rejoyan-crm-share-native.is-fallback {
+    --mf-share-bg:#64748b;
+    --mf-share-dark:#475569
+}
+
+.rejoyan-crm-social-empty {
+    grid-column:1/-1;
+    display:grid;
+    place-items:center;
+    min-height:220px;
+    text-align:center
+}
+
+.rejoyan-crm-social-empty .dashicons {
+    width:40px;
+    height:40px;
+    font-size:40px;
+    color:#94a3b8
+}
+
+.rejoyan-crm-social-empty h3 {
+    margin:4px 0
+}
+
+.rejoyan-crm-social-empty p {
+    max-width:500px;
+    margin:0;
+    color:var(--mf-muted)
+}
+@media (max-width:1180px) {
+    .rejoyan-crm-social-toolbar {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+
+    .rejoyan-crm-social-toolbar-note {
+        min-height:40px
+    }
+
+}
+@media (max-width:782px) {
+    .rejoyan-crm-social-toolbar {
+        grid-template-columns:1fr
+    }
+
+    .rejoyan-crm-social-share-block {
+        align-items:flex-start;
+        flex-direction:column
+    }
+
+    .rejoyan-crm-social-iconbar {
+        justify-content:flex-start
+    }
+
+    .rejoyan-crm-social-icon-btn {
+        width:46px;
+        height:46px
+    }
+
+    .rejoyan-crm-live-product-pill {
+        align-self:flex-start
+    }
+
+}
+@media (prefers-reduced-motion:reduce) {
+    .rejoyan-crm-social-icon-btn,.rejoyan-crm-social-grid {
+        transition:none
+    }
+
+    .rejoyan-crm-social-icon-btn:hover,.rejoyan-crm-social-icon-btn:focus,.rejoyan-crm-social-icon-btn:active {
+        transform:none
+    }
+
+}
