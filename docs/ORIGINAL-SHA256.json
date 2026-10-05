@@ -1,0 +1,20 @@
+{
+  "uninstall.php": "390287e8c25d39293d2a7675503e2c5b6f1fe32b9f7840f8bb8a8e3d0517b6cf",
+  "LICENSE.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+  "changelog.txt": "b070cb78a9f96e89f80bc776c929fffa461c05a170a1c8bf8cb0f9e4bf77bbb4",
+  "rejoyan-crm-campaigns-for-woocommerce.php": "fe5f5ccf02b2b22dc810cf04270b907e62c172d9dd07d3520430ebf007dc789b",
+  "readme.txt": "4b4701d07fda4b2f0e8ce47da3d7b6ba03aed0b78ca290d1fd287a3ccd0b6b17",
+  "includes/class-rejoyan-crm-reports.php": "ec1fc05e9fd07643b1513bf62ea5d2c702aa3f7003d01d7a0bfd23ea1eac3ca5",
+  "includes/class-rejoyan-crm-admin.php": "21fb01bd04074136fc2d2bdf803d789266f531ae2d75b8cc8f630c4d9e2e591a",
+  "includes/class-rejoyan-crm-db.php": "710b78f6517de37daefcce3e3a947232d16f6caccdcd4bf9552d350db9bc4ba0",
+  "includes/class-rejoyan-crm.php": "b847c1660e5633529f3fb2d9532c0b7d0df3812503bb824f748808e0df5e3935",
+  "includes/class-rejoyan-crm-offers.php": "32fd0d97652749a5d5aa9afe8ffa4ddec1328bbaf9b2500c48718dbf68acf13e",
+  "includes/class-rejoyan-crm-mailer.php": "04cf6661506e784e5e916890eb9322193f148ad18dcdde2fdb5e33215b28b1b6",
+  "includes/class-rejoyan-crm-segments.php": "3fd2fa5c3d82cdd6c5b132feb00dd5174ebf669b969b056cf6a946e1e456354b",
+  "includes/class-rejoyan-crm-privacy.php": "15130540e3f25254816fac880bf4e227a7fba8fcaa95db20ef19d310af23bce0",
+  "includes/class-rejoyan-crm-campaigns.php": "058219a0ee4ef02eac0e20e69f5b858cbdb5dbb46a7578d64b41a2445910facb",
+  "includes/class-rejoyan-crm-admin-lazy.php": "429f08c1db898106829d96f7d8656142b10405e195b7e36ff90c803e19a22ab5",
+  "includes/class-rejoyan-crm-activator.php": "c22fc0eecfc59cf49036deb2260d2a04cf286cc493c87ea89a48a5f476e973e3",
+  "assets/css/admin.css": "6fb7985585345357406a3c72082a22ea72f3674a43baf6a8bb299f0597a1f2f0",
+  "assets/js/admin.js": "4468498eb5f35f040061d3a9e2a6668f9f0f52163f1adac2340254d49ad70773"
+}
