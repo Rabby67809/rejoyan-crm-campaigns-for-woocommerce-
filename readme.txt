@@ -1,18 +1,19 @@
 === Rejoyan CRM & Campaigns for WooCommerce ===
 Contributors: rejoyan9009
-Tags: woocommerce, email-marketing, crm, coupons, social-sharing
+Tags: woocommerce, crm, email-marketing, coupons, customer-management
 Requires at least: 6.5
-Tested up to: 7.1
 Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Customer CRM, offer email templates, smart segments, scheduled campaigns, delivery reports, invoices and live product sharing for WooCommerce.
+Manage WooCommerce customers, build product offers, schedule email campaigns, review sending reports and share store products.
 
 == Description ==
 
-Rejoyan CRM & Campaigns is a WooCommerce marketing workspace inside WordPress. It helps store managers prepare reusable product-linked offers, select registered customers or smart segments, queue marketing email, review delivery status, resend failures, trigger WooCommerce invoice email, and share live store products to social networks.
+Rejoyan CRM & Campaigns brings customer management and email campaign tools into your WooCommerce store. Create reusable offers linked to your products, choose a customer audience, schedule marketing emails and review campaign sending results from your WordPress dashboard.
+
+Use smart customer segments, prepare product offers with optional coupons, send test emails, retry failed messages and trigger WooCommerce invoice emails. The Social Studio helps you prepare captions and share published store products through Facebook, X, LinkedIn and WhatsApp sharing links.
 
 Rejoyan CRM & Campaigns keeps its campaign data in the WordPress database and uses WooCommerce APIs for products, orders and coupons. Marketing email is handed to WordPress through `wp_mail()`; the plugin does not include a mail-delivery service or tracking pixel.
 
@@ -25,7 +26,7 @@ Rejoyan CRM & Campaigns is independently developed and is not affiliated with or
 * Segments include VIP, repeat, inactive, new, no-order and recent buyers.
 * Target registered customers who previously bought a selected product.
 * Unsubscribed customers are skipped automatically.
-* Sending requires an administrator confirmation that a lawful basis exists for the selected marketing audience.
+* New campaign and offer sending forms include an administrator marketing-permission confirmation. Site owners must ensure every audience is eligible before sending.
 
 = Offer Email Templates =
 
@@ -43,7 +44,7 @@ Rejoyan CRM & Campaigns is independently developed and is not affiliated with or
 * Recipient snapshot and per-recipient pending, sent, failed and skipped states.
 * WooCommerce Action Scheduler when available, with WP-Cron fallback.
 * Campaign preview, test email, cancellation and failed-recipient retry.
-* Delivery totals, 14-day send volume and CSV reporting.
+* Mail handoff totals, 14-day send volume and CSV reporting. A successful handoff to WordPress mail transport does not confirm inbox delivery.
 * System Health page for queue, cron, database, WooCommerce and sender checks.
 * No open tracking or click tracking is stored.
 
@@ -61,7 +62,7 @@ Rejoyan CRM & Campaigns is independently developed and is not affiliated with or
 * Customer, product, analytics and order panels load only when needed.
 * Rejoyan CRM & Campaigns admin/report classes are not loaded on normal storefront requests.
 * WordPress personal-data exporter and eraser integration is included.
-* Optional full Rejoyan CRM & Campaigns data cleanup is available on uninstall.
+* Optional cleanup of plugin-owned data is available on uninstall; database table structures are retained.
 
 Site owners are responsible for obtaining any required consent or other lawful basis for marketing communications and for configuring a suitable WordPress mail transport.
 
@@ -81,7 +82,7 @@ No. Rejoyan CRM & Campaigns has no bundled cloud service. Email is passed to Wor
 
 = Can I send to every registered customer? =
 
-The plugin includes an all-registered-customer workflow, but unsubscribed customers are skipped and the administrator must confirm they are allowed to send the marketing message to the selected audience.
+The plugin includes an all-registered-customer workflow and skips customers marked as unsubscribed. Site owners must ensure they are allowed to contact their selected audience before queueing a campaign.
 
 = Does Rejoyan CRM & Campaigns track opens or clicks? =
 
@@ -89,11 +90,11 @@ No tracking pixel is inserted and click events are not stored. Product-linked of
 
 = Does it support WooCommerce HPOS? =
 
-Yes. Rejoyan CRM & Campaigns declares HPOS compatibility and uses WooCommerce order APIs rather than directly reading legacy order posts.
+Rejoyan CRM & Campaigns declares HPOS compatibility and uses WooCommerce order APIs. Test the plugin with your store configuration before production use.
 
 = Does uninstall remove Rejoyan CRM & Campaigns data? =
 
-Not by default. Enable the explicit cleanup option in Rejoyan CRM & Campaigns Settings before uninstalling if you want Rejoyan CRM & Campaigns tables, settings and Rejoyan CRM & Campaigns marketing user metadata removed.
+Not by default. Enable the explicit cleanup option in Settings before uninstalling to clear plugin-owned table data, settings and marketing preference metadata. Database table structures are retained.
 
 == External Services ==
 
@@ -110,22 +111,18 @@ Email delivery is performed through WordPress `wp_mail()`. Any external SMTP or 
 
 == Screenshots ==
 
-1. Rejoyan CRM & Campaigns dashboard and queue overview.
-2. Customer Email Center with saved-offer and audience workflow.
-3. Offer Template Studio with product linking.
-4. Delivery Analytics and campaign history.
-5. Live Product Social Studio using real WooCommerce products.
-6. System Health checks.
+1. Dashboard overview with customer totals, campaign sending counters, queue status and recent campaigns. Presented with a branded frame.
+2. Customer Email Center showing registered customers, eligible emails and the first-offer setup state. Presented with a branded frame.
+3. Customer Segments for VIP, repeat, inactive, new, no-order and recent buyers. Presented with a branded frame.
+4. System Health showing scheduled campaigns, queue activity, failed recipients and WooCommerce, cron, database and sender readiness checks.
+5. Delivery Analytics showing mail handoff totals, send volume, skipped and pending counts, CSV export and campaign history. The example has no campaign data.
+6. Social Studio showing published WooCommerce product cards, editable captions, copy controls and social sharing buttons. These products have no images assigned.
+7. Original Customer Email Center interface showing customer and email counters and the prompt to create the first reusable offer.
 
 == Changelog ==
 
 = 1.0.0 =
-* Finalized the first WordPress.org submission release.
-* Resolved pre-submission Plugin Check findings for internationalization, nonce checks, input sanitization and custom-table SQL handling.
-* Added server-side marketing-permission confirmation to standard queued campaigns.
-* Hardened CSV report cells against spreadsheet formula execution.
-* Kept the v0.8 automation, scheduling, retry, System Health, smart segments, product-linked templates and live product Social Studio feature set.
-* Reworked release documentation and human-readable assets for WordPress.org review.
+* Initial WordPress.org release with customer segments, reusable offers, email campaigns, delivery reporting, System Health and product social sharing.
 
 Full version history is included in `changelog.txt`.
 
