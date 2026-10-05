@@ -1,0 +1,32 @@
+name: Update WordPress.org readme
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - readme.txt
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wordpress-org-deploy
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Update readme in WordPress.org SVN
+        uses: 10up/action-wordpress-plugin-asset-update@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: rejoyan-crm-campaigns-for-woocommerce
+          IGNORE_OTHER_FILES: "true"
+          SKIP_ASSETS: "true"
